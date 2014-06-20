@@ -1,0 +1,71 @@
+/*
+*
+*
+*
+*@file _wrap.scss
+*for wrapped circles
+*
+*
+*
+*/
+// Colors
+$overlayColor: #f5f5f5;
+$backColor: #f5f5f5;
+
+/* -------------------------------------
+ * Bar container
+ * ------------------------------------- */
+.progress-radial{
+  float: left;
+  margin-right: 15px;
+  margin-left: 5px;
+  position: relative;
+  width: 215px;
+  height: 215px;
+  border-radius: 50%;
+  background-color: $green; // default 100%
+}
+/* -------------------------------------
+ * Optional centered circle w/text
+ * ------------------------------------- */
+.progress-radial .overlay {
+  position: absolute;
+  width: 185px;
+  height: 115px;
+  background-color: $overlayColor;
+  border-radius: 50%;
+  margin-left: 15px;
+  margin-top: 15px;
+  text-align: center;
+  font-size: $sizeMB_57;
+  font-family: $fontMB;
+  padding-top: 70px;
+  line-height: 20px;
+  color: $skills_color_in_circle;
+  span{
+    font-size: $sizeMR_16;
+    font-family: $fontMR;
+    color: $skills_color_skills_in_circle;
+  }
+}
+/* -------------------------------------
+ * Mixin for progress-% class
+ * ------------------------------------- */
+
+$step: 1; // step of % for created classes
+
+$loops: round(100 / $step);
+$increment: 360 / $loops;
+$half: round($loops / 2);
+@for $i from 0 through $loops {
+  .progress-#{$i*$step} {
+    @if $i < $half {
+      $nextdeg: 90deg + ( $increment * $i );
+      background-image: linear-gradient(90deg, $green 50%, transparent 50%, transparent), linear-gradient($nextdeg, $green 50%, $backColor 50%, $backColor);
+    }
+    @else {
+      $nextdeg: -90deg + ( $increment * ( $i - $half ) );
+      background-image: linear-gradient($nextdeg, $green 50%, transparent 50%, transparent), linear-gradient(270deg, $green 50%, $backColor 50%, $backColor);
+    }
+  }
+}

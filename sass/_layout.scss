@@ -1,0 +1,24 @@
+/*
+*
+*
+*
+*@file _layout.scss
+* Markup page
+*
+*
+*/
+header{
+  @include size_block(755px, $width_page);
+}
+.container{
+  @include size_block(auto, $width_container);
+}
+section{
+  @include size_block(auto, $width_page)
+}
+footer{
+  @include size_block(300px, $width_page);
+}
+//section{
+//  @include size_block(auto, $size_page);
+//}

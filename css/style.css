@@ -1,0 +1,1055 @@
+/*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+/*include mixin for styling
+--------------------------------------------*/
+/*
+*
+*@file _mixin.scss
+* Mixins for properties
+*
+*/
+/*
+*mixin for size layout block
+-----------------------------------------------------------------------------------------------------------------------
+*/
+/*include setting for styling
+--------------------------------------------*/
+/*
+*
+* @file _setting.scss
+* Setting for styling page
+* - fonts
+* - colors
+* -
+*/
+/*include layout for styling
+--------------------------------------------*/
+/*
+*
+*
+*
+*@file _layout.scss
+* Markup page
+*
+*
+*/
+header {
+  height: 755px;
+  width: 1440px;
+  position: relative;
+  margin: 0 auto; }
+
+.container {
+  height: auto;
+  width: 940px;
+  position: relative;
+  margin: 0 auto; }
+
+section {
+  height: auto;
+  width: 1440px;
+  position: relative;
+  margin: 0 auto; }
+
+footer {
+  height: 300px;
+  width: 1440px;
+  position: relative;
+  margin: 0 auto; }
+
+/*include responsive for styling
+--------------------------------------------*/
+/*
+*
+*
+*
+*@file _responsive.scss
+* Responsive
+*
+*
+*
+*
+*/
+/*include element for styling
+--------------------------------------------*/
+/*
+*
+*@file _element.scss
+* header and footer elements
+*
+*/
+/*include section for styling
+--------------------------------------------*/
+/*
+*
+*@file _section.scss
+* Main scss file
+*
+*/
+/* Styling block header
+---------------------------------------------------*/
+header {
+  background-color: #5ec2e7;
+  color: white; }
+  header .container .logo {
+    margin-top: 0px;
+    padding-top: 56px;
+    float: left; }
+  header .container nav {
+    float: right;
+    padding-top: 56px; }
+    header .container nav li {
+      display: inline;
+      margin-left: 35px;
+      text-transform: uppercase;
+      font-family: MonsterratBold;
+      font-size: 14px; }
+      header .container nav li a {
+        text-decoration: none;
+        color: white;
+        padding-bottom: 5px; }
+      header .container nav li :hover {
+        border-bottom: 3px solid white; }
+  header .container .header_content {
+    margin: 0 auto;
+    padding-top: 330px;
+    height: 370px;
+    width: 630px;
+    background-image: url("../img/cat2.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 49%;
+    padding-bottom: 10px;
+    background-size: 650px 450px; }
+    header .container .header_content h1 {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: MonsterratBold;
+      font-size: 60px;
+      margin-top: 0px;
+      margin-bottom: 0; }
+    header .container .header_content h3 {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: MonsterratRegular;
+      font-size: 18px;
+      margin-top: 0px;
+      letter-spacing: 0.4px; }
+  header .container .go_down {
+    margin: 0 auto;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-top: -60px;
+    background-image: url("../img/arrow.png");
+    background-repeat: no-repeat;
+    background-position: center; }
+
+#i_create {
+  height: 400px;
+  background-color: #f4f4f4; }
+  #i_create .container {
+    padding-top: 95px; }
+    #i_create .container .ui {
+      height: 200px;
+      width: 200px;
+      border-radius: 60px;
+      float: left;
+      position: relative;
+      background-color: #34cf75;
+      color: white; }
+      #i_create .container .ui p {
+        text-align: center;
+        margin-top: 70px;
+        font-family: MonsterratBold;
+        font-size: 42px;
+        text-transform: uppercase; }
+    #i_create .container .ux {
+      height: 200px;
+      width: 200px;
+      border-radius: 60px;
+      float: left;
+      position: relative;
+      background-color: #ededed;
+      left: -60px;
+      opacity: 0.6;
+      color: #ff605f; }
+      #i_create .container .ux p {
+        text-align: center;
+        margin-top: 70px;
+        font-family: MonsterratBold;
+        font-size: 42px;
+        text-transform: uppercase; }
+    #i_create .container .i_create_content {
+      width: 435px;
+      float: left;
+      margin-left: 20px; }
+      #i_create .container .i_create_content h6 {
+        font-family: MonsterratBold;
+        font-size: 24px;
+        margin-top: -5px;
+        margin-bottom: 30px;
+        color: #333333; }
+      #i_create .container .i_create_content p {
+        font-family: OpenSans;
+        font-size: 16px;
+        margin-top: 0px;
+        color: #666666; }
+    #i_create .container .sliders {
+      height: 20px;
+      width: 70px;
+      position: relative;
+      margin: 0 auto;
+      padding-top: 245px; }
+      #i_create .container .sliders .slider_button {
+        height: 14px;
+        width: 14px;
+        border-radius: 50%;
+        background-color: #dbdbdb;
+        margin-right: 10px;
+        float: left; }
+      #i_create .container .sliders :last-child {
+        margin-right: 0px; }
+
+#portfolio {
+  height: 900px;
+  background-color: #fbfbfb; }
+  #portfolio .container {
+    padding-top: 100px; }
+    #portfolio .container h5 {
+      margin: 0 auto;
+      text-transform: uppercase;
+      text-align: center;
+      border-bottom: 3px solid;
+      width: 100px;
+      font: 16px MonsterratBold;
+      color: #333333;
+      padding-bottom: 10px;
+      border-bottom-color: #e3e3e3;
+      margin-bottom: 70px; }
+    #portfolio .container .column {
+      width: 220px;
+      float: left; }
+      #portfolio .container .column .portfolio_item {
+        height: 160px;
+        width: 220px;
+        border-radius: 30px;
+        background-color: #f4f4f4;
+        margin-bottom: 30px; }
+        #portfolio .container .column .portfolio_item img {
+          height: 160px;
+          width: 220px;
+          border-radius: 30px; }
+      #portfolio .container .column .big {
+        height: 350px;
+        width: 460px;
+        border-radius: 30px;
+        background-color: #f4f4f4;
+        margin-bottom: 30px;
+        background-color: #5ec2e7; }
+        #portfolio .container .column .big img {
+          height: 350px;
+          width: 460px;
+          border-radius: 30px; }
+    #portfolio .container .one {
+      float: left;
+      margin-right: 20px; }
+    #portfolio .container .two {
+      width: 460px; }
+      #portfolio .container .two .portfolio_item {
+        float: left;
+        margin-right: 20px; }
+      #portfolio .container .two :last-child {
+        margin-right: 0px; }
+    #portfolio .container .three {
+      float: right; }
+    #portfolio .container .portfolio_button {
+      height: 30px;
+      width: 215px;
+      position: relative;
+      margin: 0 auto;
+      border: 2px solid #5ec2e7;
+      text-align: center;
+      border-radius: 5px;
+      font-family: MonsterratRegular;
+      font-size: 14px;
+      color: #5ec2e7;
+      padding-top: 11px;
+      text-transform: uppercase;
+      margin-top: 640px; }
+
+#skills {
+  background-color: whitesmoke;
+  height: 760px; }
+  #skills .container h5 {
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 3px solid;
+    width: 100px;
+    font: 16px MonsterratBold;
+    color: #333333;
+    padding-bottom: 10px;
+    border-bottom-color: #e0e0e0;
+    padding-top: 105px;
+    margin-bottom: 70px; }
+  #skills .container p {
+    width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    font-family: OpenSans;
+    font-size: 16px;
+    color: #666666; }
+
+#experience {
+  height: 910px;
+  background-color: #fbfbfb; }
+  #experience .container_2 {
+    padding-top: 90px;
+    height: auto;
+    width: 1100px;
+    position: relative;
+    margin: 0 auto; }
+    #experience .container_2 .work_experience {
+      margin-left: 140px;
+      margin-top: 180px;
+      float: left; }
+      #experience .container_2 .work_experience h6 {
+        margin-bottom: 45px;
+        margin-left: 5px;
+        font-family: MonsterratRegular;
+        font-size: 28px;
+        color: #333333; }
+      #experience .container_2 .work_experience p {
+        width: 335px;
+        font-size: 16px;
+        font-family: OpenSans;
+        color: #666666;
+        padding-left: 7px;
+        line-height: 30px; }
+      #experience .container_2 .work_experience .work_experience_button {
+        height: 30px;
+        width: 200px;
+        position: relative;
+        margin: 0 auto;
+        border: 2px solid #5ec2e7;
+        text-align: center;
+        border-radius: 5px;
+        font-family: MonsterratRegular;
+        font-size: 14px;
+        color: #5ec2e7;
+        padding-top: 11px;
+        text-transform: uppercase;
+        margin-left: 0px;
+        margin-top: 28px; }
+    #experience .container_2 .time_scale {
+      float: left;
+      margin-left: 55px;
+      margin-right: 0px;
+      margin-top: 50px;
+      position: relative; }
+      #experience .container_2 .time_scale .year {
+        font-family: MonsterratBold;
+        font-size: 18px;
+        color: #cccccc;
+        margin-top: 5px;
+        margin-bottom: 5px; }
+      #experience .container_2 .time_scale .line {
+        height: 295px;
+        width: 0px;
+        margin-left: 17px;
+        border: 1px solid #cccccc;
+        position: relative; }
+      #experience .container_2 .time_scale .second {
+        height: 250px; }
+      #experience .container_2 .time_scale .point {
+        height: 15px;
+        width: 15px;
+        border-radius: 55%;
+        border: 3px solid #cccccc;
+        background-color: #f6f6f6;
+        position: absolute;
+        left: 8px; }
+      #experience .container_2 .time_scale .one {
+        top: 115px; }
+      #experience .container_2 .time_scale .two {
+        top: 245px; }
+      #experience .container_2 .time_scale .three {
+        top: 415px; }
+      #experience .container_2 .time_scale .four {
+        top: 540px; }
+    #experience .container_2 .employers {
+      float: left;
+      margin-top: 140px;
+      width: 490px;
+      margin-left: 15px; }
+      #experience .container_2 .employers .employer .company {
+        float: left;
+        height: 60px;
+        width: 60px;
+        border-radius: 20px;
+        background-color: white;
+        margin-right: 20px;
+        margin-bottom: 25px;
+        margin-top: 5px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat; }
+      #experience .container_2 .employers .employer .facebook-c {
+        background-color: #375996;
+        background-image: url("../img/facebook-c.png"); }
+      #experience .container_2 .employers .employer .amazon-c {
+        background-image: url("../img/amazon-c.png"); }
+      #experience .container_2 .employers .employer .apple-c {
+        background-image: url("../img/apple-c.png");
+        opacity: 0.5; }
+      #experience .container_2 .employers .employer .ibm-c {
+        background-image: url("../img/ibm-c.png"); }
+      #experience .container_2 .employers .employer .data {
+        padding-left: 85px;
+        padding-top: 5px; }
+        #experience .container_2 .employers .employer .data h6 {
+          font-family: MonsterratBold;
+          font-size: 18px;
+          color: #333333;
+          margin-bottom: 5px;
+          margin-top: -5px; }
+        #experience .container_2 .employers .employer .data .job {
+          font-family: MonsterratRegular;
+          font-size: 14px;
+          color: #333333;
+          margin-top: 0px;
+          margin-bottom: 5px; }
+        #experience .container_2 .employers .employer .data p {
+          font-family: MonsterratRegular;
+          font-size: 13px;
+          color: #999999;
+          margin-top: 0px; }
+      #experience .container_2 .employers .amazon {
+        margin-top: 40px;
+        margin-bottom: 80px; }
+      #experience .container_2 .employers .apple {
+        margin-bottom: 35px; }
+
+#quote {
+  height: 350px;
+  background-color: #ff605f; }
+  #quote .container p {
+    padding-top: 95px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 0px; }
+    #quote .container p i {
+      color: white;
+      font-family: OpenSans;
+      font-size: 24px; }
+  #quote .container .name {
+    color: #cccccc;
+    font-family: OpenSans;
+    font-size: 16px;
+    padding-top: 0px; }
+  #quote .container .sliders {
+    height: 20px;
+    width: 80px;
+    position: relative;
+    margin: 0 auto; }
+    #quote .container .sliders .slider_button {
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+      background-color: white;
+      margin-right: 12px;
+      margin-top: 5px;
+      float: left; }
+    #quote .container .sliders :last-child {
+      margin-right: 0px; }
+
+#contact {
+  height: 800px;
+  background-color: #f6f6f6; }
+  #contact .container h5 {
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 3px solid;
+    width: 100px;
+    font: 16px MonsterratBold;
+    color: #333333;
+    padding-bottom: 10px;
+    border-bottom-color: #e1e1e1;
+    padding-top: 95px;
+    margin-bottom: 100px; }
+  #contact .container .forms {
+    width: 640px;
+    float: left;
+    font-family: MonsterratRegular;
+    font-size: 14px; }
+    #contact .container .forms [name="name"], #contact .container .forms [name="email"] {
+      width: 280px;
+      height: 50px;
+      padding-left: 20px;
+      border-radius: 7px;
+      border: 2px solid #e7eaee;
+      margin-bottom: 20px; }
+    #contact .container .forms [name="name"] {
+      margin-right: 15px; }
+    #contact .container .forms [name="budget"], #contact .container .forms [name="timeline"] {
+      height: 57px;
+      width: 628px;
+      padding-left: 20px;
+      border-radius: 7px;
+      border: 2px solid #e7eaee;
+      margin-bottom: 18px; }
+    #contact .container .forms textarea {
+      height: 100px;
+      width: 588px;
+      padding: 20px;
+      border-radius: 7px;
+      border: 2px solid #e7eaee;
+      margin-bottom: 27px; }
+    #contact .container .forms [value="send"] {
+      height: 55px;
+      width: 140px;
+      border-radius: 7px;
+      text-transform: uppercase;
+      color: white;
+      background-color: #fd685b;
+      float: right;
+      margin-right: 10px;
+      font-size: 16px; }
+    #contact .container .forms :hover {
+      cursor: pointer; }
+  #contact .container .contacts {
+    margin-left: 75px;
+    float: left;
+    width: 200px; }
+    #contact .container .contacts .location {
+      width: 165px;
+      margin-bottom: 70px; }
+      #contact .container .contacts .location h6 {
+        margin-top: 0px;
+        margin-bottom: 20px;
+        font-family: MonsterratBold;
+        font-size: 13px;
+        color: #cccccc;
+        text-transform: uppercase; }
+      #contact .container .contacts .location p {
+        font-family: OpenSans;
+        font-size: 15px;
+        color: #333333; }
+    #contact .container .contacts .socials {
+      margin-top: 20px; }
+      #contact .container .contacts .socials h6 {
+        margin-top: 0px;
+        margin-bottom: 20px;
+        font-family: MonsterratBold;
+        font-size: 13px;
+        color: #cccccc;
+        text-transform: uppercase; }
+      #contact .container .contacts .socials .social {
+        margin-top: 0px;
+        margin-bottom: 17px;
+        width: 165px;
+        opacity: 0.5; }
+        #contact .container .contacts .socials .social .icon {
+          margin-top: 0px;
+          float: left;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: #375996;
+          background-image: url("../img/facebook_icon.png");
+          background-repeat: no-repeat;
+          background-position: 50% 50%; }
+        #contact .container .contacts .socials .social .twitter {
+          background-color: #06a2ec;
+          background-image: url("../img/tweeter_icon.png");
+          background-position: 50% 49%; }
+        #contact .container .contacts .socials .social .linkedin {
+          background-color: #2a9fd7;
+          background-image: url("../img/in_icon.png"); }
+        #contact .container .contacts .socials .social .google {
+          background-color: #ef5b52;
+          background-image: url("../img/google_icon.png"); }
+        #contact .container .contacts .socials .social .rss {
+          background-color: #f59530;
+          background-image: url("../img/rss_icon.png"); }
+        #contact .container .contacts .socials .social .icon_name {
+          float: left;
+          margin-top: 7px;
+          margin-left: 20px;
+          margin-bottom: 25px;
+          width: 100px;
+          font-family: MonsterratRegular;
+          font-size: 16px;
+          color: #333333; }
+      #contact .container .contacts .socials :hover {
+        opacity: 1; }
+
+#map {
+  height: 347px;
+  width: 1440px;
+  position: relative;
+  margin: 0 auto;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat; }
+  #map .position_on_map {
+    position: relative;
+    left: 880px;
+    top: 25px; }
+    #map .position_on_map .big_circle {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      background-color: white;
+      opacity: 0.5;
+      position: relative;
+      float: left;
+      top: 18px; }
+    #map .position_on_map .small_circle {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: #fd685b;
+      position: absolute;
+      top: 33px;
+      left: 15px;
+      opacity: 1; }
+    #map .position_on_map .corner {
+      float: left;
+      position: absolute;
+      left: 51px;
+      top: 32px; }
+    #map .position_on_map .based {
+      height: 85px;
+      width: 170px;
+      background-color: white;
+      border-radius: 10px;
+      margin-left: 10px;
+      float: left; }
+      #map .position_on_map .based p {
+        font-family: MonsterratRegular;
+        font-size: 14px;
+        color: #2b96ad;
+        margin-left: 12px;
+        margin-top: 5px; }
+        #map .position_on_map .based p span {
+          font-size: 22px; }
+
+footer {
+  background-color: #363842; }
+  footer .container .column {
+    width: 160px;
+    height: 100px;
+    margin-right: 80px;
+    float: left;
+    padding-top: 50px; }
+    footer .container .column h6 {
+      margin-top: 0px;
+      margin-bottom: 35px;
+      font-family: MonsterratBold;
+      font-size: 16px;
+      color: white;
+      text-transform: uppercase; }
+    footer .container .column p {
+      margin-top: 0px;
+      margin-bottom: 8px;
+      width: 160px;
+      height: 20px;
+      font-family: MonsterratRegular;
+      font-size: 14px;
+      color: #545766;
+      text-transform: uppercase; }
+      footer .container .column p a {
+        text-decoration: none;
+        color: #545766; }
+      footer .container .column p span {
+        text-transform: capitalize; }
+  footer .container .follow_us {
+    margin-right: 0px;
+    margin-bottom: 45px; }
+    footer .container .follow_us .icon {
+      float: left;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #363842;
+      margin-right: 20px;
+      border: 2px solid white;
+      background-image: url("../img/tweeter_footer.png");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      opacity: 0.4; }
+    footer .container .follow_us .tweet {
+      background-image: url("../img/tweeter_icon.png"); }
+    footer .container .follow_us .tweet:hover {
+      background-color: #06a2ec;
+      border: none;
+      opacity: 1; }
+    footer .container .follow_us .face {
+      background-image: url("../img/facebook_icon.png"); }
+    footer .container .follow_us .face:hover {
+      background-color: #375996;
+      border: none;
+      opacity: 1; }
+
+/*include wrap for styling
+--------------------------------------------*/
+/*
+*
+*
+*
+*@file _wrap.scss
+*for wrapped circles
+*
+*
+*
+*/
+/* -------------------------------------
+ * Bar container
+ * ------------------------------------- */
+.progress-radial {
+  float: left;
+  margin-right: 15px;
+  margin-left: 5px;
+  position: relative;
+  width: 215px;
+  height: 215px;
+  border-radius: 50%;
+  background-color: #34cf75; }
+
+/* -------------------------------------
+ * Optional centered circle w/text
+ * ------------------------------------- */
+.progress-radial .overlay {
+  position: absolute;
+  width: 185px;
+  height: 115px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  margin-left: 15px;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 57px;
+  font-family: MonsterratBold;
+  padding-top: 70px;
+  line-height: 20px;
+  color: #666666; }
+  .progress-radial .overlay span {
+    font-size: 16px;
+    font-family: MonsterratRegular;
+    color: #999999; }
+
+/* -------------------------------------
+ * Mixin for progress-% class
+ * ------------------------------------- */
+.progress-0 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(90deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-1 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(93.6deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-2 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(97.2deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-3 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(100.8deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-4 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(104.4deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-5 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(108deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-6 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(111.6deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-7 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(115.2deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-8 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(118.8deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-9 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(122.4deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-10 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(126deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-11 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(129.6deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-12 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(133.2deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-13 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(136.8deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-14 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(140.4deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-15 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(144deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-16 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(147.6deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-17 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(151.2deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-18 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(154.8deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-19 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(158.4deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-20 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(162deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-21 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(165.6deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-22 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(169.2deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-23 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(172.8deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-24 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(176.4deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-25 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(180deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-26 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(183.6deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-27 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(187.2deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-28 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(190.8deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-29 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(194.4deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-30 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(198deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-31 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(201.6deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-32 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(205.2deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-33 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(208.8deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-34 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(212.4deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-35 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(216deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-36 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(219.6deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-37 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(223.2deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-38 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(226.8deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-39 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(230.4deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-40 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(234deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-41 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(237.6deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-42 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(241.2deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-43 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(244.8deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-44 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(248.4deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-45 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(252deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-46 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(255.6deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-47 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(259.2deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-48 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(262.8deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-49 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(266.4deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-50 {
+  background-image: linear-gradient(-90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-51 {
+  background-image: linear-gradient(-86.4deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-52 {
+  background-image: linear-gradient(-82.8deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-53 {
+  background-image: linear-gradient(-79.2deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-54 {
+  background-image: linear-gradient(-75.6deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-55 {
+  background-image: linear-gradient(-72deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-56 {
+  background-image: linear-gradient(-68.4deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-57 {
+  background-image: linear-gradient(-64.8deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-58 {
+  background-image: linear-gradient(-61.2deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-59 {
+  background-image: linear-gradient(-57.6deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-60 {
+  background-image: linear-gradient(-54deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-61 {
+  background-image: linear-gradient(-50.4deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-62 {
+  background-image: linear-gradient(-46.8deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-63 {
+  background-image: linear-gradient(-43.2deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-64 {
+  background-image: linear-gradient(-39.6deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-65 {
+  background-image: linear-gradient(-36deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-66 {
+  background-image: linear-gradient(-32.4deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-67 {
+  background-image: linear-gradient(-28.8deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-68 {
+  background-image: linear-gradient(-25.2deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-69 {
+  background-image: linear-gradient(-21.6deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-70 {
+  background-image: linear-gradient(-18deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-71 {
+  background-image: linear-gradient(-14.4deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-72 {
+  background-image: linear-gradient(-10.8deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-73 {
+  background-image: linear-gradient(-7.2deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-74 {
+  background-image: linear-gradient(-3.6deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-75 {
+  background-image: linear-gradient(0deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-76 {
+  background-image: linear-gradient(3.6deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-77 {
+  background-image: linear-gradient(7.2deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-78 {
+  background-image: linear-gradient(10.8deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-79 {
+  background-image: linear-gradient(14.4deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-80 {
+  background-image: linear-gradient(18deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-81 {
+  background-image: linear-gradient(21.6deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-82 {
+  background-image: linear-gradient(25.2deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-83 {
+  background-image: linear-gradient(28.8deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-84 {
+  background-image: linear-gradient(32.4deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-85 {
+  background-image: linear-gradient(36deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-86 {
+  background-image: linear-gradient(39.6deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-87 {
+  background-image: linear-gradient(43.2deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-88 {
+  background-image: linear-gradient(46.8deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-89 {
+  background-image: linear-gradient(50.4deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-90 {
+  background-image: linear-gradient(54deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-91 {
+  background-image: linear-gradient(57.6deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-92 {
+  background-image: linear-gradient(61.2deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-93 {
+  background-image: linear-gradient(64.8deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-94 {
+  background-image: linear-gradient(68.4deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-95 {
+  background-image: linear-gradient(72deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-96 {
+  background-image: linear-gradient(75.6deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-97 {
+  background-image: linear-gradient(79.2deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-98 {
+  background-image: linear-gradient(82.8deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-99 {
+  background-image: linear-gradient(86.4deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }
+
+.progress-100 {
+  background-image: linear-gradient(90deg, #34cf75 50%, transparent 50%, transparent), linear-gradient(270deg, #34cf75 50%, whitesmoke 50%, whitesmoke); }

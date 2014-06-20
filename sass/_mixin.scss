@@ -1,0 +1,74 @@
+/*
+*
+*@file _mixin.scss
+* Mixins for properties
+*
+*/
+/*
+*mixin for size layout block
+-----------------------------------------------------------------------------------------------------------------------
+*/
+@mixin size_block($height, $width){
+  height: $height;
+  width: $width;
+  position: relative;
+  margin: 0 auto;
+}
+@mixin position_element($top, $left){
+  position: absolute;
+  top: $top;
+  left: $left;
+}
+@mixin ui_ux{
+  height: $ui_height;
+  width: $ui_width;
+  border-radius: 60px;
+  float: left;
+  position: relative;
+  p{
+    text-align: center;
+    margin-top: 70px;
+    font-family: $fontMB;
+    font-size: $sizeMB_42;
+    text-transform: uppercase;
+  }
+}
+@mixin circle($height, $width){
+  height: $height;
+  width: $width;
+  border-radius: 50%;
+}
+@mixin h5{
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 3px solid ;
+  width: 100px;
+  font: $sizeMB_16 $fontMB;
+  color: $I_create_color;
+  padding-bottom: 10px;
+}
+@mixin portfolio_item($height, $width){
+  height: $height;
+  width: $width;
+  border-radius: 30px;
+  background-color: $i_create_background_color;
+  margin-bottom: 30px;
+  img{
+    height: $height;
+    width: $width;
+    border-radius: 30px;
+  }
+}
+@mixin section_button{
+  border: 2px solid $header_background_color;
+  text-align: center;
+  border-radius: 5px;
+  font-family: $fontMR;
+  font-size: $sizeMR_14;
+  color: $header_background_color;
+  padding-top: 11px;
+  text-transform: uppercase;
+
+}
+

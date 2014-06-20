@@ -1,0 +1,637 @@
+/*
+*
+*@file _section.scss
+* Main scss file
+*
+*/
+
+
+/* Styling block header
+---------------------------------------------------*/
+header{
+  background-color: $header_background_color;
+  color: $white;
+  .container{
+    .logo{
+      margin-top: 0px;
+      padding-top: 56px;
+      float: left;
+    }
+    nav{
+      float: right;
+      padding-top: 56px;
+      li{
+        display: inline;
+        margin-left: 35px;
+        text-transform: uppercase;
+        font-family: $fontMB;
+        font-size: $sizeMB_14;
+        a{
+          text-decoration: none;
+          color: $white;
+          padding-bottom: 5px;
+        }
+        :hover{border-bottom: 3px solid $white;}
+      }
+    }
+    .header_content{
+      margin: 0 auto;
+      padding-top: 330px;
+      height: 370px;
+      width: 630px;
+      background-image: url("../img/cat2.jpg");
+      background-repeat: no-repeat;
+      background-position: 50% 49%;
+      padding-bottom: 10px;
+      background-size: 650px 450px;
+      h1{
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $fontMB;
+        font-size: $sizeMB_60;
+        margin-top: 0px;
+        margin-bottom: 0;
+      }
+      h3{
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $fontMR;
+        font-size: $sizeMR_18;
+        margin-top: 0px;
+        letter-spacing: 0.4px;
+      }
+    }
+    .go_down{
+      margin: 0 auto;
+      @include circle(45px, 45px);
+      border: 3px solid $white;
+      margin-top: -60px;
+      background-image: url("../img/arrow.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+#i_create{
+  height: 400px;
+  background-color: $i_create_background_color;
+  .container{
+    padding-top: 95px;
+    .ui{
+      @include ui_ux;
+      background-color: $ui_background_color;
+      color: $white;
+    }
+    .ux{
+      @include ui_ux;
+      background-color: $ux_background_color;
+      left: -60px;
+      opacity: 0.6;
+      color: $quote_background_color;
+    }
+    .i_create_content{
+      width: 435px;
+      float: left;
+      margin-left: 20px;
+      h6{
+        font-family: $fontMB;
+        font-size: $sizeMB_24;
+        margin-top: -5px;
+        margin-bottom: 30px;
+        color: $I_create_color;
+      }
+      p{
+        font-family: $fontOS;
+        font-size: $sizeOS_16;
+        margin-top: 0px;
+        color: $skills_color_in_circle;
+      }
+    }
+    .sliders{
+      @include size_block(20px, 70px);
+      padding-top: 245px;
+      .slider_button{
+        @include circle(14px, 14px);
+        background-color: $I_create_slider_button_color;
+        margin-right: 10px;
+        float: left;
+      }
+      :last-child{margin-right: 0px}
+    }
+  }
+}
+#portfolio{
+  height: 900px;
+
+  background-color: $portfolio_background_color;
+  .container{
+    padding-top: 100px;
+    h5{
+     @include h5;
+      border-bottom-color: $portfolio_bottom_border_color;
+      margin-bottom: 70px;
+    }
+    .column{
+      width: 220px;
+      float: left;
+      .portfolio_item{
+        @include portfolio_item(160px, 220px);
+      }
+      .big{
+        @include portfolio_item(350px, 460px);
+        background-color: $header_background_color;
+      }
+    }
+    .one{
+      float: left;
+      margin-right: 20px;
+    }
+    .two{
+      width: 460px;
+      .portfolio_item{
+        float: left;
+        margin-right: 20px;
+      }
+      :last-child{
+        margin-right: 0px;
+      }
+    }
+    .three{
+      float: right;
+    }
+    .portfolio_button{
+      @include size_block(30px, 215px);
+      @include section_button;
+      margin-top: 640px;
+    }
+  }
+}
+#skills{
+  background-color: $skills_background_color;
+  height: 760px;
+  .container{
+    h5{
+      @include h5;
+      border-bottom-color: $skills_bottom_border_color;
+      padding-top: 105px;
+      margin-bottom: 70px;
+    }
+    p{
+      width: 800px;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 120px;
+      font-family: $fontOS;
+      font-size: $sizeOS_16;
+      color: $skills_color_in_circle;
+    }
+  }
+}
+#experience{
+  height: 910px;
+  background-color: $experience_background_color;
+  .container_2{
+    padding-top: 90px;
+    @include size_block(auto, $width_container_2);
+    .work_experience {
+      margin-left: 140px;
+      margin-top: 180px;
+      float: left;
+      h6 {
+        margin-bottom: 45px;
+        margin-left: 5px;
+        font-family: $fontMR;
+        font-size: $sizeMR_28;
+        color: $I_create_color;
+      }
+      p {
+        width: 335px;
+        font-size: $sizeOS_16;
+        font-family: $fontOS;
+        color: $skills_color_in_circle;
+        padding-left: 7px;
+        line-height: 30px;
+      }
+      .work_experience_button {
+        @include size_block(30px, 200px);
+        @include section_button;
+        margin-left: 0px;
+        margin-top: 28px;
+      }
+    }
+    .time_scale{
+      float: left;
+      margin-left: 55px;
+      margin-right: 0px;
+      margin-top: 50px;
+      position: relative;
+      .year{
+        font-family: $fontMB;
+        font-size: $sizeMB_18;
+        color: $gray;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      .line{
+        height: 295px;
+        width: 0px;
+        margin-left: 17px;
+        border: 1px solid $gray;
+        position: relative;
+      }
+      .second{
+        height: 250px;
+      }
+      .point {
+        height: 15px;
+        width: 15px;
+        border-radius: 55%;
+        border: 3px solid $gray;
+        background-color: $contact_background_color;
+        position: absolute;
+        left: 8px;
+      }
+      .one{
+        top: 115px;
+      }
+      .two{
+        top: 245px;
+      }
+      .three{
+        top: 415px;
+      }
+      .four{
+        top: 540px;
+      }
+    }
+    .employers{
+      float: left;
+      margin-top: 140px;
+      width: 490px;
+      margin-left: 15px;
+      .employer{
+        .company{
+          float: left;
+          height: 60px;
+          width: 60px;
+          border-radius: 20px;
+          background-color: $white;
+          margin-right: 20px;
+          margin-bottom: 25px;
+          margin-top: 5px;
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
+        }
+        .facebook-c{
+          background-color: $facebook_bg;
+          background-image: url("../img/facebook-c.png");
+        }
+        .amazon-c{
+          background-image: url("../img/amazon-c.png");
+        }
+        .apple-c{
+          background-image: url("../img/apple-c.png");
+          opacity: 0.5;
+        }
+        .ibm-c{
+          background-image: url("../img/ibm-c.png");
+        }
+        .data {
+          padding-left: 85px;
+          padding-top: 5px;
+          h6 {
+            font-family: $fontMB;
+            font-size: $sizeMB_18;
+            color: $I_create_color;
+            margin-bottom: 5px;
+            margin-top: -5px;
+          }
+          .job {
+            font-family: $fontMR;
+            font-size: $sizeMR_14;
+            color: $I_create_color;
+            margin-top: 0px;
+            margin-bottom: 5px;
+          }
+          p {
+            font-family: $fontMR;
+            font-size: $sizeMR_13;
+            color: $skills_color_skills_in_circle;
+            margin-top: 0px;
+          }
+        }
+      }
+      .facebook{
+
+      }
+      .amazon{
+        margin-top: 40px;
+        margin-bottom: 80px;
+      }
+      .apple{
+        margin-bottom: 35px;
+      }
+      .ibm{
+
+      }
+    }
+  }
+}
+#quote{
+  height: 350px;
+  background-color: $quote_background_color;
+  .container{
+    p{
+      padding-top: 95px;
+      text-align: center;
+      margin-bottom: 30px;
+      margin-top: 0px;
+      i {
+        color: $white;
+        font-family: $fontOS;
+        font-size: $sizeOS_24;
+
+      }
+    }
+    .name{
+      color: $gray;
+      font-family: $fontOS;
+      font-size: $sizeOS_16;
+      padding-top: 0px;
+    }
+    .sliders{
+      @include size_block(20px, 80px);
+      .slider_button{
+        @include circle(12px, 12px);
+        background-color: $white;
+        margin-right: 12px;
+        margin-top: 5px;
+        float: left;
+      }
+      :last-child{margin-right: 0px}
+    }
+  }
+}
+#contact{
+  height: 800px;
+  background-color: $contact_background_color;
+  .container{
+    h5{
+      @include h5;
+      border-bottom-color: $contact_bottom_border_color;
+      padding-top: 95px;
+      margin-bottom: 100px;
+    }
+    .forms{
+       width: 640px;
+      float: left;
+      font-family: $fontMR;
+      font-size: $sizeMR_14;
+      [name="name"], [name="email"]{
+        width: 280px;
+        height: 50px;
+        padding-left: 20px;
+        border-radius: 7px;
+        border: 2px solid $form_border;
+        margin-bottom: 20px;
+      }
+      [name="name"]{
+        margin-right: 15px;
+      }
+      [name="budget"], [name="timeline"]{
+        height: 57px;
+        width: 628px;
+        padding-left: 20px;
+        border-radius: 7px;
+        border: 2px solid $form_border;
+        margin-bottom: 18px;
+      }
+      textarea{
+        height: 100px;
+        width: 588px;
+        padding: 20px;
+        border-radius: 7px;
+        border: 2px solid $form_border;
+        margin-bottom: 27px;
+      }
+      [value="send"]{
+        height: 55px;
+        width: 140px;
+        border-radius: 7px;
+        text-transform: uppercase;
+        color: $white;
+        background-color: $send_background_color;
+        float: right;
+        margin-right: 10px;
+        font-size: $sizeMR_16;
+      }
+      :hover{
+        cursor: pointer;
+      }
+    }
+    .contacts{
+      margin-left: 75px;
+      float: left;
+      width: 200px;
+      .location{
+        width: 165px;
+        margin-bottom: 70px;
+        h6{
+          margin-top: 0px;
+          margin-bottom: 20px;
+          font-family: $fontMB;
+          font-size: $sizeMB_13;
+          color: $gray;
+          text-transform: uppercase;
+        }
+        p{
+          font-family: $fontOS;
+          font-size: $sizeOS_15;
+          color: $I_create_color;
+        }
+      }
+      .socials{
+        margin-top: 20px;
+        h6{
+          margin-top: 0px;
+          margin-bottom: 20px;
+          font-family: $fontMB;
+          font-size: $sizeMB_13;
+          color: $gray;
+          text-transform: uppercase;
+        }
+        .social{
+          margin-top: 0px;
+          margin-bottom: 17px;
+          width: 165px;
+          opacity: 0.5;
+          .icon{
+            margin-top: 0px;
+            float: left;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: $facebook_bg;
+            background-image: url("../img/facebook_icon.png");
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+          }
+          .twitter{
+            background-color: $twitter_bg;
+            background-image: url("../img/tweeter_icon.png");
+            background-position: 50% 49%;
+          }
+          .linkedin{
+            background-color: $linkedin_bg;
+            background-image: url("../img/in_icon.png");
+          }
+          .google{
+            background-color: $google_bg;
+            background-image: url("../img/google_icon.png");
+          }
+          .rss{
+            background-color: $rss_bg;
+            background-image: url("../img/rss_icon.png");
+          }
+          .icon_name{
+            float: left;
+            margin-top: 7px;
+            margin-left: 20px;
+            margin-bottom: 25px;
+            width: 100px;
+            font-family: $fontMR;
+            font-size: $sizeMR_16;
+            color: $I_create_color;
+          }
+        }
+        :hover{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+#map{
+  @include size_block(347px, $width_page);
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  .position_on_map {
+    position: relative;
+    left: 880px;
+    top:25px;
+    .big_circle {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      background-color: $white;
+      opacity: 0.5;
+      position: relative;
+      float: left;
+      top: 18px;
+    }
+    .small_circle {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: $send_background_color;
+      position: absolute;
+      top: 33px;
+      left: 15px;
+      opacity: 1;
+    }
+    .corner{
+      float: left;
+      position: absolute;
+      left: 51px;
+      top: 32px;
+    }
+    .based {
+      height: 85px;
+      width: 170px;
+      background-color: $white;
+      border-radius: 10px;
+      margin-left: 10px;
+      float: left;
+      p{
+        font-family: $fontMR;
+        font-size: $sizeMR_14;
+        color: $map_color;
+        margin-left: 12px;
+        margin-top: 5px;
+        span{
+          font-size: $sizeMR_22;
+        }
+      }
+    }
+  }
+}
+footer{
+  background-color: $footer_background_color;
+  .container{
+    .column{
+      width: 160px;
+      height: 100px;
+      margin-right: 80px;
+      float: left;
+      padding-top: 50px;
+      h6{
+        margin-top: 0px;
+        margin-bottom: 35px;
+        font-family: $fontMB;
+        font-size: $sizeMB_16;
+        color: $white;
+        text-transform: uppercase;
+      }
+      p{
+        margin-top: 0px;
+        margin-bottom: 8px;
+        width: 160px;
+        height: 20px;
+        font-family: $fontMR;
+        font-size: $sizeMR_14;
+        color: $footer_color;
+        text-transform: uppercase;
+        a{
+          text-decoration: none;
+          color: $footer_color;
+        }
+        span{
+          text-transform: capitalize;
+        }
+      }
+    }
+    .follow_us{
+      margin-right: 0px;
+      margin-bottom: 45px;
+      .icon{
+        float: left;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color:$footer_background_color;
+        margin-right: 20px;
+        border: 2px solid $white;
+        background-image: url("../img/tweeter_footer.png");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        opacity: 0.4;
+      }
+      .tweet{
+        background-image: url("../img/tweeter_icon.png");
+      }
+      .tweet:hover{
+        background-color: $twitter_bg;
+        border: none;
+        opacity: 1;
+      }
+      .face{
+        background-image: url("../img/facebook_icon.png");
+      }
+      .face:hover{
+        background-color: $facebook_bg;
+        border: none;
+        opacity: 1;
+      }
+    }
+  }
+}
